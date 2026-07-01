@@ -1,0 +1,24 @@
+{
+  "name": "@glgc/ocr",
+  "version": "1.0.0",
+  "description": "Korean utility bill OCR client + field extraction for GreenCheck",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0",
+    "typescript": "^5.0.0",
+    "vitest": "^3.0.0"
+  }
+}
